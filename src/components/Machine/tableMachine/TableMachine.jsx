@@ -36,7 +36,6 @@ export function TableMachine(props) {
     }
 
     if (!filters.area & !filters.maquina) {
-        console.log(maquinas)
         result = maquinas
     }
     else {
