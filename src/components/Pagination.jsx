@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from 'react-icons/Bs'
+import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from 'react-icons/bs'
 
 export function Pagination({ next, prev, page }) {
 
