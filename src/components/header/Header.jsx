@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar } from 'flowbite-react';
 import { OperarioIcon } from '../../components/icons'
+import { Link } from 'react-router-dom';
 
 export function Header() {
     return (
@@ -16,12 +17,16 @@ export function Header() {
                 <Navbar.Link className='text-lg' href="/">
                     <p>Inicio</p>
                 </Navbar.Link>
-                <Navbar.Link className='text-lg' href='/maquinas'>
-                    <p>Maquinas</p>
-                </Navbar.Link>
-                <Navbar.Link className='text-lg' href='/partes'>
-                    <p>Partes</p>
-                </Navbar.Link>
+                <Link to={'/maquinas'}>
+                    <Navbar.Link className='text-lg'>
+                        <p>Maquinas</p>
+                    </Navbar.Link>
+                </Link>
+                <Link to={'/partes'}>
+                    <Navbar.Link className='text-lg'>
+                        <p>Partes</p>
+                    </Navbar.Link>
+                </Link>
             </Navbar.Collapse>
         </Navbar>
     )
