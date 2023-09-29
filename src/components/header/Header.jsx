@@ -18,13 +18,13 @@ export function Header() {
                     <p>Inicio</p>
                 </Navbar.Link>
                 <Link to={'/maquinas'} >
-                    <Navbar.Link href="/maquinas" className='text-lg'>
-                        Maquinas
+                    <Navbar.Link className='text-lg'>
+                        <p>Maquinas</p>
                     </Navbar.Link>
                 </Link>
                 <Link to={'/partes'}>
-                    <Navbar.Link href="/partes" className='text-lg'>
-                        Partes
+                    <Navbar.Link className='text-lg'>
+                        <p>Partes</p>
                     </Navbar.Link>
                 </Link>
             </Navbar.Collapse>
