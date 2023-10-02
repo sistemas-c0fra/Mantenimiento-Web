@@ -1,0 +1,11 @@
+{
+    "projectId": "prj_Ir7WdDAVK7C5vpP0TzFPvJI1Sl6v",
+    "orgId": "team_MHhjqFwATZhgyECkRD15kNG1",
+    "routes": [
+        {
+            "src": "/[^.]+",
+            "dest": "/",
+            "status": 200
+        }
+    ]
+}
