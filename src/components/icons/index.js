@@ -1,3 +1,5 @@
 export * from './MachineIcon'
 export * from './PartIcon'
 export * from './OperarioIcon'
+export * from './AreaIcon'
+export * from './SettingIcon'

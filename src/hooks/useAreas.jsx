@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { getAreasApi } from '../api/MaquinasApi'
+import { addAreaApi, updateAreaApi, deleteAreaApi } from '../api/AreasApi'
 
 export function useAreas() {
 
@@ -18,9 +19,42 @@ export function useAreas() {
         }
     }
 
+    const addAreas = async (data) => {
+        try {
+            setLoading(true)
+            await addAreaApi(data)
+            setLoading(false)
+        } catch (error) {
+            setLoading(false)
+        }
+    }
+
+    const updateAreas = async (data, id) => {
+        try {
+            setLoading(true)
+            await updateAreaApi(data, id)
+            setLoading(false)
+        } catch (error) {
+            setLoading(false)
+        }
+    }
+
+    const deleteAreas = async (id) => {
+        try {
+            setLoading(true)
+            await deleteAreaApi(id)
+            setLoading(false)
+        } catch (error) {
+            setLoading()
+        }
+    }
+
     return {
         loading,
         areas,
-        getAreas
+        getAreas,
+        addAreas,
+        updateAreas,
+        deleteAreas
     }
 } 

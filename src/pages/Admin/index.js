@@ -1,3 +1,5 @@
 export * from './HomePage'
 export * from './MachinePage'
 export * from './PartPage'
+export * from './AreaPage'
+export * from './SubAreaPage'
